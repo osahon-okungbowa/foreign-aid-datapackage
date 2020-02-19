@@ -1,3 +1,4 @@
 conda==4.8.2
 setuptools
 wheel
+bitarray==1.2.1

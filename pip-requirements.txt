@@ -1,3 +1,4 @@
 dataflows==0.0.68
-
+requests==2.22.0
+pandas==1.0.1
 

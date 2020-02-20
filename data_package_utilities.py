@@ -107,7 +107,7 @@ def create_package(flows: tuple = None):
     # run the Flow object that creates the data packages
     dataflows.Flow(*flows,
                    dataflows.dump_to_path(out_path='foreign_aid_package'),
-                   dataflows.dump_to_zip(out_file='foreign_aid_package_zip')).\
+                   dataflows.dump_to_zip(out_file='foreign_aid_package_zip.zip')).\
                        process()
 
 def clean_up_process():

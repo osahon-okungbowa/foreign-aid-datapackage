@@ -10,8 +10,18 @@ if __name__ == "__main__":
     DATA_URL = "http://www.oecd.org/dac/financing-sustainable-development/" +\
                "development-finance-data/TAB04e.xls"
     # load the data and store the process flows
+    print('loading data from source...')
     DATA_FLOWS = dpu.load_data(DATA_URL)
     # create the data package
+    print('data loaded.')
+    print('creating resource files and data package...')
+    print('2 data packages will be created.... ')
+    print('one is a directory called "foreign_aid_package"...')
+    print('two is a zip/archive called "foreign_aid_package_zip"...')
     dpu.create_package(DATA_FLOWS)
+    print('data package created.')
     # cleanup process
+    print('cleaning up...')
     dpu.clean_up_process()
+    print('clean up completed')
+    print('DATA PACKAGE CREATED SUCCESSFULLY')

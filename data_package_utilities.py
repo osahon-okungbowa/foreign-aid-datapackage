@@ -92,7 +92,7 @@ def load_data(source: str = None) -> dataflows.Flow:
     dac_assistance_gni_flow = dataflows.Flow(
         dataflows.load(temp_file_path[0: temp_file_path.
                                       rfind('.')] + 'B.csv',
-                       name='dac-assitance-percentage-gni'))
+                       name='dac-assistance-percentage-gni'))
      # return the flow objects
     return (dac_assistance_value_flow, dac_assistance_gni_flow)
 
